@@ -1,7 +1,7 @@
 *{
     margin: 0; /*distance outside the box*/
     padding: 0; /*distance inside the box*/
-    font-family: 'Helvetica';
+    font-family: 'Open Sans';
     box-sizing: border-box;
 }
 html{ /* for website scroll in the nav bar buttons */
