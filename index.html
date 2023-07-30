@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Chiquita Zephaniah</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c16779469b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo (1).png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li> <!--navigation buttons (clickable link)-->
+                <li><a href="#about">About</a></li> <!--li for list of items-->
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>     <!-- the #contact (id) and in other lines are for website scroll -->
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i> <!-- close/x icon for phone -->
+            </ul> <!--ul for unordered list of items-->
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i> <!-- menu icon for phone -->
+        </nav>
+        <div class="header-text">
+            <h1>Hi, I'm <span>Chiquita</span></h1> <!--h1 is the biggest text-->
+            <h4>I'm a <span>Computer Science</span> student</h4><!--br for line break-->
+            <h2><i class="fa-brands fa-html5" style="color: #e65c00;"></i>
+                <i class="fa-brands fa-css3-alt" style="color: #004dd1;"></i>
+                <i class="fa-brands fa-square-js" style="color: #e4d158;"></i>
+                <i class="fa-brands fa-python" style="color: #5979b1;"></i>
+                <i class="fa-brands fa-java" style="color: #c71a1a;"></i></h2>
+        </div>
+    </div>
+</div> 
+<!-- -----------about----------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/Profile PNG.png" class="profile">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>"I'm a passionate computer science student with expertise in technical troubleshooting, 
+                    <br>user support, and software engineering. I'm actively seeking opportunities as a</br> 
+                    software engineer or front-end developer.
+                    <br>Let's connect and explore how I can contribute to your team!</br>
+                </p>
+                <div class="line-about-me"></div>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p> <!--active-link to show the content on the active link-->
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills"> <!--the 'skills' has to be lowercase bcs opentab skills lowercase-->
+                        <ul>
+                            <li><span>Web Development</span><br>Front-end web development</li>
+                            <li><span>Technical Troubleshooting</span><br>Hardware, Software, and Network Issues</li>
+                            <li><span>User Support</span><br>First point of contact for technical inquiries</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience"> <!--experience lowercase-->
+                        <ul>
+                            <li><span>2022 - Present</span><br>IT Support at Edmonds College</li>
+                            <li><span>2019 - 2022</span><br>Brand Ambassador/Sponsored Player at Valhall Indonesia Floorball Store</li>
+                            <li><span>2018 - 2021</span><br>Sports Team Lead in High School and Sports Club</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education"> <!--education lowercase-->
+                        <ul>
+                            <li><span>2022 - Present</span><br>Associate Degree (Computer Science) - Edmonds College</li>
+                            <li><span>2017 - 2020</span><br>High School (Science) - SMAK 7 PENABUR</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------------Portfolio---------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/website.jpg">
+                <div class="layer">
+                    <h3>Personal Portfolio Website</h3>
+                    <p>A personal portfolio website created using HTML, CSS, and Javascript 
+                        programming languages <br>Go to the page</br></p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/pong1.jpg">
+                <div class="layer">
+                    <h3>Pong Game</h3>
+                    <p>A ticketing system that helps people book a flight easily.
+                        <br>Go to the page.</br></p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/Airplane (1).jpg">
+                <div class="layer">
+                    <h3>Bank or Airlines Ticketing System</h3>
+                    <p>A ticketing system that helps people book a flight easily.
+                        <br>Go to the page.</br></p>
+                    </p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div> 
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- -----------------contact------------------ -->
+<div id="contact">
+    <div class="container">
+        <!-- create 2 column, left contact phone etc, right contact form -->
+        <div class="second-row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>zephaniahchiquita@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> +1 (425) 469-2734</p>
+                <div class="social-icons">
+                    <a href="https://web.facebook.com/chiquita.zephaniah"><i class="fa-brands fa-facebook" style="color: #1c67e9;"></i></a>
+                    <a href="https://www.instagram.com/chiquitazephaniah/"><i class="fa-brands fa-instagram" style="color: #e83bba;"></i></a>
+                    <a href="https://www.linkedin.com/in/chiquitazephaniah/"><i class="fa-brands fa-linkedin" style="color: #3678bf;"></i></a>
+                </div>
+                <a href="images/Chiquita Zephaniah_Resume.pdf" download class="btn btn2">Download Résumé</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span> <!-- to send a message for the form text box -->
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © 2023 Chiquita Zephaniah</p>
+    </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link"); //it will remove the active class name
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab"); //it will remove the active class name
+        }
+        //so that when I click on the tab, the content and underline removed
+        event.currentTarget.classList.add("active-link"); //add the active-link and display the underline color
+        document.getElementById(tabname).classList.add("active-tab") //if we click on education, it will send education to tabname
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){ /* whenever call the openmenu, it will open sidemenu (next line) */
+        sidemenu.style.right= "0"; /* whenever right 0, it will be visible */
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<!-- ----------------contactform google sheet-------------- -->
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwQC5Mhyk_0ZpjM6pSumwA0eCVOiNlpXJJiap639OyALSmZjntGo9wqkXxnod9HaUuMjA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){  
+                msg.innerHTML = ""
+            },3000) /* make the message gone after 5 sec */
+            form.reset()    /* reset the input field */
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
